@@ -9,7 +9,7 @@ services:
     volumes:
       - "/etc/timezone:/etc/timezone:ro"
       - "/etc/localtime:/etc/localtime:ro"
-      - "./rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf"
+      # - "./rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf"
       - "rabbitdata:/var/lib/rabbitmq/"
     environment:
       - RABBITMQ_DEFAULT_USER=${RABBITMQ_USER}
